@@ -257,232 +257,195 @@ input::-webkit-search-results-decoration {
   padding-top: 43px;
 }
 
-.menu__choices {
+.menu__tabs {
+  display: flex;
+  width: 64.8%;
+}
+
+.menu__tabs-list {
   display: flex;
   align-items: start;
   justify-content: space-between;
   flex: auto;
-  max-width: 65.3%;
   align-items: center;
 }
 
-.header__form {
-  display: none;
-}
-
-.header__choices {
+.menu__tabs-btn {
   position: relative;
-  margin: 0;
 }
 
-.choices__placeholder {
-  opacity: 1;
-  transition: all .3s ease-in-out;
+.menu__item {
+  position: absolute;
+  top: -379px;
+  height: 250px;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  overflow-y: scroll;
+  transition: top .3s ease-in-out, opacity .7s ease-in-out;
+  opacity: 0;
 }
 
-.choices__placeholder:hover {
-  color: var(--color-amethyst);
+.menu__item--active {
+ top: 50px;
+ opacity: 1;
 }
 
-.choices__placeholder.is-open {
+.menu__tabs-name {
+  padding: 5px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-white);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.menu__tabs-name:hover {
+  color: var(--color-hover);
+}
+
+.menu__tabs-name:hover svg {
+  stroke: var(--color-hover);
+}
+
+.menu__tabs-name svg {
+  stroke: white;
+  transition: transform .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.menu__tabs-name:focus-visible {
+  background-color: var(--color-focus-active);
+}
+
+.menu__tabs-btn--active .menu__tabs-name svg:not(:focus-visible) {
+  transform: rotate(180deg);
+  stroke: var(--color-focus-active);
+}
+
+.menu__tabs-btn--active .menu__tabs-name:not(:focus-visible) {
   color: var(--color-focus-active);
 }
 
-.header__inner {
-  width: 120%;
-  padding: 0;
-  padding-right: 25px;
-  background-color: initial;
-  border: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: var(--color-white);
-}
-
-.header__choices[data-type*=select-one]::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
-  right: 17px;
-  bottom: 0;
-  transform: translateX(50%);
-  background-image: url(/img/choises.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: transform .4s ease-in-out, background-image .3s ease-in-out;
-}
-
-.header__choices[data-type*=select-one]:hover::after {
-  background-image: url(/img/choises-hover.svg);
-}
-
-.header__choices[data-type*=select-one].is-open:after {
-  transform: rotate(180deg) translate(-50%, 2px);
-  margin-top: 0;
-  background-image: url(/img/choises-active.svg);
-  background-color: initial;
-}
-
-.choices__list--single {
-  padding: 0;
-  padding-top: 11px;
-  word-break: normal;
-  will-change: contents;
-  display: inline-block;
-}
-
-.choices__list--dropdown, .choices__list[aria-expanded] {
-  background-color: initial;
-  border: 0;
-}
-
-.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
-  background-color: initial;
-}
-
-.choices__list--dropdown .choices__list, .choices__list[aria-expanded] .choices__list {
-  height: 250px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-left: 15px;
-  padding-top: 15px;
-}
-
-.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
-  padding: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: var(--color-white);
-}
-
-.choices__list--dropdown .choices__placeholder {
-  display: none;
-}
-
-
-#choices--realism-item-choice-1 {
-  background-image: url(/img/Realism-choice-1.png);
-}
-
-#choices--realism-item-choice-2 {
-  background-image: url(/img/Realism-choice-2.png);
-}
-
-#choices--realism-item-choice-4 {
-  background-image: url(/img/Realism-choice-3.png);
-}
-
-#choices--realism-item-choice-5 {
-  background-image: url(/img/Realism-choice-4.png);
-}
-
-#choices--impressionism-item-choice-2 {
-  background-image: url(/img/impressionism-choice-1.png);
-}
-
-#choices--impressionism-item-choice-3 {
-  background-image: url(/img/impressionism-choice-2.png);
-}
-
-#choices--impressionism-item-choice-4 {
-  background-image: url(/img/impressionism-choice-3.png);
-}
-
-#choices--impressionism-item-choice-5 {
-  background-image: url(/img/impressionism-choice-4.png);
-}
-
-#choices--Post-Impressionism-item-choice-1 {
-  background-image: url(/img/Post-Impressionism-choice-1.png);
-}
-
-#choices--Post-Impressionism-item-choice-2 {
-  background-image: url(/img/Post-Impressionism-choice-2.png);
-}
-
-#choices--Post-Impressionism-item-choice-4 {
-  background-image: url(/img/Post-Impressionism-choice-3.png);
-}
-
-#choices--Post-Impressionism-item-choice-5 {
-  background-image: url(/img/Post-Impressionism-choice-4.png);
-}
-
-#choices--vanguard-item-choice-2 {
-  background-image: url(/img/vanguard-choice-1.png);
-}
-
-#choices--vanguard-item-choice-3 {
-  background-image: url(/img/vanguard-choice-2.png);
-}
-
-#choices--vanguard-item-choice-4 {
-  background-image: url(/img/vanguard-choice-3.png);
-}
-
-#choices--vanguard-item-choice-5 {
-  background-image: url(/img/vanguard-choice-4.png);
-}
-
-#choices--futurism-item-choice-1 {
-  background-image: url(/img/futurism-choice-1.png);
-}
-
-#choices--futurism-item-choice-2 {
-  background-image: url(/img/futurism-choice-2.png);
-}
-
-#choices--futurism-item-choice-3 {
-  background-image: url(/img/futurism-choice-3.png);
-}
-
-#choices--futurism-item-choice-4 {
-  background-image: url(/img/futurism-choice-4.png);
-}
-
-#choices--realism-item-choice-1, #choices--realism-item-choice-2,
-#choices--realism-item-choice-4, #choices--realism-item-choice-5,
-#choices--impressionism-item-choice-2, #choices--impressionism-item-choice-3,
-#choices--impressionism-item-choice-4, #choices--impressionism-item-choice-5,
-#choices--Post-Impressionism-item-choice-1, #choices--Post-Impressionism-item-choice-2,
-#choices--Post-Impressionism-item-choice-4, #choices--Post-Impressionism-item-choice-5,
-#choices--vanguard-item-choice-2, #choices--vanguard-item-choice-3,
-#choices--vanguard-item-choice-4, #choices--vanguard-item-choice-5,
-#choices--futurism-item-choice-1, #choices--futurism-item-choice-2,
-#choices--futurism-item-choice-3, #choices--futurism-item-choice-4 {
+.menu__item-content {
+  position: relative;
   width: 220px;
   padding: 9px 0 12px 14px;
   background-repeat: no-repeat;
   background-size: cover;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-white);
 }
 
-.choices__list[aria-expanded] .choices__item {
-  transition: background-color .4s ease-in-out, border .4s ease-in-out;
+.menu__item-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid var(--color-amethyst);
+  opacity: 0;
+  transition: opacity .4s ease-in-out, background-color .4s ease-in-out;
 }
 
-.choices__list[aria-expanded] .choices__item:hover,
-.choices__list[aria-expanded] .choices__item:focus-visible {
-  border: 2px solid var(--color-hover);
+.menu__item-content:hover::after,
+.menu__item-content:focus-visible:after {
+  opacity: 1;
 }
 
-.choices__list[aria-expanded] .choices__item:-moz-focusring {
-  border: 2px solid var(--color-hover);
+.menu__item-content:active::after {
+  background-color: rgba(194, 131, 243, 0.4); 
 }
 
-.choices__list[aria-expanded] .choices__item:active {
-  background-color: rgba(194, 131, 243, 0.4);
-  border: none;
-}
-
-.is-active.choices__list--dropdown, .is-active.choices__list[aria-expanded] {
-  width: 250px;
-  padding-top: 40px;
-}
-
-.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item:not(:last-child) {
+.menu__item-content:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.tintoretto-img {
+  background-image: url(/img/Realism-Tintoretto.png);
+}
+
+.friedrich-img {
+  background-image: url(/img/Realism-friedrich.png);
+}
+
+.leonardo-img {
+  background-image: url(/img/Realism-leonardo.png);
+}
+
+.verrocchio-img {
+  background-image: url(/img/Realism-verrocchio.png);
+}
+
+.monet-img {
+  background-image: url(/img/impressionism-monet.png);
+}
+
+.sisley-img {
+  background-image: url(/img/impressionism-sisley.png);
+}
+
+.mane-img {
+  background-image: url(/img/impressionism-mane.png);
+}
+
+.renoir-img {
+  background-image: url(/img/impressionism-renoir.png);
+}
+
+.van-gogh-img {
+  background-image: url(/img/Post-Impressionism-van-gogh.png);
+}
+
+.cezanne-img {
+  background-image: url(/img/Post-Impressionism-cezanne.png);
+}
+
+.gogen-img {
+  background-image: url(/img/Post-Impressionism-gogen.png);
+}
+
+.sulfur-img {
+  background-image: url(/img/Post-Impressionism-sulfur.png);
+}
+
+.kandinsky-img {
+  background-image: url(/img/vanguard-kandinsky.png);
+}
+
+.marinetti-img {
+  background-image: url(/img/vanguard-marinetti.png);
+}
+
+.malevich-img {
+  background-image: url(/img/vanguard-malevich.png);
+}
+
+.picasso-img {
+  background-image: url(/img/vanguard-picasso.png);
+}
+
+.carra-img {
+  background-image: url(/img/futurism-carra.png);
+}
+
+.pratella-img {
+  background-image: url(/img/futurism-pratella.png);
+}
+
+.severini-img {
+  background-image: url(/img/futurism-severini.png);
+}
+
+.balla-img {
+  background-image: url(/img/futurism-balla.png);
+}
+
+.header__form {
+  display: none;
 }
 
 .menu__search {
@@ -534,9 +497,6 @@ input::-webkit-search-results-decoration {
 .hero__content {
   position: relative;
   z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .hero__swiper {
@@ -559,6 +519,7 @@ input::-webkit-search-results-decoration {
   padding-left: 160px;
   padding-right: 160px;
   padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .hero__title {
@@ -603,7 +564,7 @@ input::-webkit-search-results-decoration {
   border-radius: 100px;
   opacity: 0;
   transition: opacity .3s ease-in-out;
-  }
+}
 
 .hero__link:hover::after {
   opacity: 1;
@@ -1375,7 +1336,7 @@ input::-webkit-search-results-decoration {
 
 .tooltip-txt:hover:before,
 .tooltip-txt:hover:after {
- opacity: 1;
+  opacity: 1;
 }
 
 /*Текст для тултипов*/

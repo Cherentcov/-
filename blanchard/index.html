@@ -29,7 +29,7 @@
             <source media="(max-width: 950px)" srcset="/img/logo-header(950).png">
             <img src="/img/logo-header.png" alt="Логотип">
           </picture>
-       </div>
+        </div>
         <nav class="nav header__nav">
           <ul class="nav__list list-reset">
             <li class="nav__item">
@@ -98,42 +98,64 @@
     </div>
     <div class="menu header__menu">
       <div class="container header_bottom">
-        <div class="menu__choices">
-          <select name="Реализм" class="menu__select" id="realism" data-simplebar>
-            <option value="">Реализм</option>
-            <option value="Тинторетто">Тинторетто</option>
-            <option value="Фридрих">Фридрих</option>
-            <option value="Леонардо">Леонардо</option>
-            <option value="Верроккьо">Верроккьо</option>
-          </select>
-          <select name="Импрессионизм" class="menu__select" id="impressionism">
-            <option value="">Импрессионизм</option>
-            <option value="Моне">Моне</option>
-            <option value="Сислей">Сислей</option>
-            <option value="Мане">Мане</option>
-            <option value="Ренуар">Ренуар</option>
-          </select>
-          <select name="Постимпрессионизм" class="menu__select" id="Post-Impressionism">
-            <option value="">Постимпрессионизм</option>
-            <option value="Ван Гог">Ван Гог</option>
-            <option value="Сезанн">Сезанн</option>
-            <option value="Гоген">Гоген</option>
-            <option value="Сёра">Сёра</option>
-          </select>
-          <select name="Авангард" class="menu__select" id="vanguard">
-            <option value="">Авангард</option>
-            <option value="Кандинский">Кандинский</option>
-            <option value="Маринетти">Маринетти</option>
-            <option value="Малевич">Малевич</option>
-            <option value="Пикассо">Пикассо</option>
-          </select>
-          <select name="Футуризм" class="menu__select" id="futurism">
-            <option value="">Футуризм</option>
-            <option value="Карра">Карра</option>
-            <option value="Прателла">Прателла</option>
-            <option value="Северини">Северини</option>
-            <option value="Балла">Балла</option>
-          </select>
+        <div class="menu__tabs">
+          <ul class="menu__tabs-list list-reset">
+            <li name="Реализм" class="menu__tabs-btn" data-path="realism">
+              <button class="menu__tabs-name btn-reset">Реализм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1"/>
+                </svg></button>
+              <div class="menu__item" data-target="realism">
+                <div class="menu__item-content tintoretto-img" tabindex="1">Тинторетто</div>
+                <div class="menu__item-content friedrich-img" tabindex="1">Фридрих</div>
+                <div class="menu__item-content leonardo-img" tabindex="1">Леонардо</div>
+                <div class="menu__item-content verrocchio-img" tabindex="1">Верроккьо</div>
+              </div>
+            </li>
+            <li name="Импрессионизм" class="menu__tabs-btn" data-path="impressionism">
+              <button class="menu__tabs-name btn-reset">Импрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1"/>
+                </svg></button>
+              <div class="menu__item" data-target="impressionism">
+                <div class="menu__item-content monet-img" tabindex="1">Моне</div>
+                <div class="menu__item-content sisley-img" tabindex="1">Сислей</div>
+                <div class="menu__item-content mane-img" tabindex="1">Мане</div>
+                <div class="menu__item-content renoir-img" tabindex="1">Ренуар</div>
+              </div>
+            </li>
+            <li name="Постимпрессионизм" class="menu__tabs-btn" data-path="Post-Impressionism">
+              <button class="menu__tabs-name btn-reset">Постимпрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1"/>
+                </svg></button>
+              <div class="menu__item" data-target="Post-Impressionism">
+                <div class="menu__item-content van-gogh-img" tabindex="1">Ван Гог</div>
+                <div class="menu__item-content cezanne-img" tabindex="1">Сезанн</div>
+                <div class="menu__item-content gogen-img" tabindex="1">Гоген</div>
+                <div class="menu__item-content sulfur-img" tabindex="1">Сёра</div>
+              </div>
+            </li>
+            <li name="Авангард" class="menu__tabs-btn" data-path="vanguard">
+              <button class="menu__tabs-name btn-reset">Авангард <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1"/>
+                </svg></button>
+              <div class="menu__item" data-target="vanguard">
+                <div class="menu__item-content kandinsky-img" tabindex="1">Кандинский</div>
+                <div class="menu__item-content marinetti-img" tabindex="1">Маринетти</div>
+                <div class="menu__item-content malevich-img" tabindex="1">Малевич</div>
+                <div class="menu__item-content picasso-img" tabindex="1">Пикассо</div>
+              </div>
+            </li>
+            <li name="Футуризм" class="menu__tabs-btn" data-path="futurism">
+              <button class="menu__tabs-name btn-reset">Футуризм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1"/>
+                </svg></button>
+              <div class="menu__item" data-target="futurism">
+                <div class="menu__item-content carra-img" tabindex="1">Карра</div>
+                <div class="menu__item-content pratella-img" tabindex="1">Прателла</div>
+                <div class="menu__item-content severini-img" tabindex="1">Северини</div>
+                <div class="menu__item-content balla-img" tabindex="1">Балла</div>
+              </div>
+            </li>
+          </ul>
         </div>
         <div class="header__search">
           <button class="menu__search-btn btn-reset">
@@ -155,45 +177,45 @@
   <main>
     <section class="hero">
       <div class="hero__content">
-      <div class="swiper  hero__swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <picture>
-              <source media="(max-width: 650px)" srcset="/img/hero-swiper1(650).png">
-              <source media="(max-width: 950px)" srcset="/img/hero-swiper1(950).png">
-              <img src="/img/hero-swiper1.jpg" alt="" aria-hidden="true" class="img-hero">
-            </picture>
+        <div class="swiper  hero__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source media="(max-width: 650px)" srcset="/img/hero-swiper1(650).png">
+                <source media="(max-width: 950px)" srcset="/img/hero-swiper1(950).png">
+                <img src="/img/hero-swiper1.jpg" alt="" aria-hidden="true" class="img-hero">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(max-width: 650px)" srcset="/img/hero-swiper2(650).png">
+                <source media="(max-width: 950px)" srcset="/img/hero-swiper2(950).png">
+                <img src="/img/hero-swiper2.png" alt="" aria-hidden="true" class="img-hero">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source media="(max-width: 650px)" srcset="/img/hero-swiper3(650).png">
+                <source media="(max-width: 950px)" srcset="/img/hero-swiper3(950).png">
+                <img src="/img/hero-swiper3.png" alt="" aria-hidden="true" class="img-hero">
+              </picture>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <picture>
-              <source media="(max-width: 650px)" srcset="/img/hero-swiper2(650).png">
-              <source media="(max-width: 950px)" srcset="/img/hero-swiper2(950).png">
-              <img src="/img/hero-swiper2.png" alt="" aria-hidden="true" class="img-hero">
-            </picture>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source media="(max-width: 650px)" srcset="/img/hero-swiper3(650).png">
-              <source media="(max-width: 950px)" srcset="/img/hero-swiper3(950).png">
-              <img src="/img/hero-swiper3.png" alt="" aria-hidden="true" class="img-hero">
-            </picture>
-          </div>
-        </div>
         </div>
         <div class="hero__container">
-       <h1 class="hero__title">
-              Прикоснитесь к&nbsp;прекрасному
+          <h1 class="hero__title">
+            Прикоснитесь к&nbsp;прекрасному
           </h1>
-            <p class="hero__descr descr">
-              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
-              предпосылки
-              для новых предложений.
-            </p>
-            <a href="#contacts" class="hero__link">Подписаться на&nbsp;рассылку</a>
-            </div>
-         </div>
+          <p class="hero__descr descr">
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
+            предпосылки
+            для новых предложений.
+          </p>
+          <a href="#contacts" class="hero__link">Подписаться на&nbsp;рассылку</a>
+        </div>
+      </div>
     </section>
     <section class="aboutUs" id="aboutUs">
       <div class="container">
@@ -340,7 +362,7 @@
               произведения Джованни да&nbsp;Милано.
             </p>
           </div>
-           <!-- Бергоньоне, Амброджо -->
+          <!-- Бергоньоне, Амброджо -->
           <div class="tabs__panel catalog__content">
             <img src="img/tabs-Bergognone.jpg" alt="Бергоньоне, Амброджо">
             <div class="catalog__name">Бергоньоне, Амброджо</div>
@@ -403,7 +425,7 @@
             <a href="#gallery" class="info__link">В&nbsp;галерею</a>
           </div>
           <!-- Брамантино -->
-          <div class="tabs__panel catalog__content" >
+          <div class="tabs__panel catalog__content">
             <div class="tabs-none">
             </div>
             <div class="catalog__name">Что мы&nbsp;о&nbsp;нём знаем?</div>
@@ -825,84 +847,86 @@
           </svg>
         </div>
         <div class="events__content">
-        <!-- Slider main container -->
-        <div class="events__swiper swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide swiper__content content">
-              <div class="content__info swiper-img1">
-                <span class="content__address">
-                  Музей им. Щусева<br>
-                  с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
-                </span>
-                <h3 class="content__title">Книжная гравюра в&nbsp; живом восприятии</h3>
-                <p class="content__descr descr">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                  продолжили его брат Давид и&nbsp;сын Ридольфо
-                </p>
-                <a href="#" target="_blank" class="content__link">Подробнее</a>
+          <!-- Slider main container -->
+          <div class="events__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper__content content">
+                <div class="content__info swiper-img1">
+                  <span class="content__address">
+                    Музей им. Щусева<br>
+                    с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
+                  </span>
+                  <h3 class="content__title">Книжная гравюра в&nbsp; живом восприятии</h3>
+                  <p class="content__descr descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                    которую
+                    продолжили его брат Давид и&nbsp;сын Ридольфо
+                  </p>
+                  <a href="#" target="_blank" class="content__link">Подробнее</a>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide swiper__content content">
-              <div class="content__info swiper-img2">
-                <span class="content__address">
-                  ММОМА<br>
-                  24&nbsp;марта 19:00
-                </span>
-                <h3 class="content__title">&laquo;Открытая дискуссия&raquo;. Дмитрий&nbsp; Петров и&nbsp;Сергей Ильин.
-                </h3>
-                <p class="content__descr descr">
-                  Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
-                  факта
-                </p>
-                <a href="#" target="_blank" class="content__link">Подробнее</a>
+              <div class="swiper-slide swiper__content content">
+                <div class="content__info swiper-img2">
+                  <span class="content__address">
+                    ММОМА<br>
+                    24&nbsp;марта 19:00
+                  </span>
+                  <h3 class="content__title">&laquo;Открытая дискуссия&raquo;. Дмитрий&nbsp; Петров и&nbsp;Сергей Ильин.
+                  </h3>
+                  <p class="content__descr descr">
+                    Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                    факта
+                  </p>
+                  <a href="#" target="_blank" class="content__link">Подробнее</a>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide swiper__content content">
-              <div class="content__info swiper-img3">
-                <span class="content__address">
-                  Еврейский музей<br>
-                  с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
-                </span>
-                <h3 class="content__title">Выставка &laquo;Формация 2020&raquo;</h3>
-                <p class="content__descr descr">
-                  Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
-                  роль в&nbsp;формировании глубокомысленных рассуждений
-                </p>
-                <a href="#" target="_blank" class="content__link">Подробнее</a>
+              <div class="swiper-slide swiper__content content">
+                <div class="content__info swiper-img3">
+                  <span class="content__address">
+                    Еврейский музей<br>
+                    с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
+                  </span>
+                  <h3 class="content__title">Выставка &laquo;Формация 2020&raquo;</h3>
+                  <p class="content__descr descr">
+                    Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
+                    роль в&nbsp;формировании глубокомысленных рассуждений
+                  </p>
+                  <a href="#" target="_blank" class="content__link">Подробнее</a>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide swiper__content content">
-              <div class="content__info swiper-img4">
-                <span class="content__address">
-                  ММАМ<br>
-                  с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
-                </span>
-                <h3 class="content__title">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
-                <p class="content__descr descr">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                  продолжили его брат Давид и&nbsp;сын Ридольфо
-                </p>
-                <a href="#" target="_blank" class="content__link">Подробнее</a>
+              <div class="swiper-slide swiper__content content">
+                <div class="content__info swiper-img4">
+                  <span class="content__address">
+                    ММАМ<br>
+                    с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
+                  </span>
+                  <h3 class="content__title">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
+                  <p class="content__descr descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии,
+                    которую
+                    продолжили его брат Давид и&nbsp;сын Ридольфо
+                  </p>
+                  <a href="#" target="_blank" class="content__link">Подробнее</a>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide swiper__content content">
-              <div class="content__info swiper-img5">
-                <span class="content__address">
-                  Третьяковка на&nbsp;Крымском валу<br>
-                  с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
-                </span>
-                <h3 class="content__title">XXIV Международная биеннале молодого искусства</h3>
-                <p class="content__descr descr">
-                  Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
-                </p>
-                <a href="#" target="_blank" class="content__link">Подробнее</a>
+              <div class="swiper-slide swiper__content content">
+                <div class="content__info swiper-img5">
+                  <span class="content__address">
+                    Третьяковка на&nbsp;Крымском валу<br>
+                    с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
+                  </span>
+                  <h3 class="content__title">XXIV Международная биеннале молодого искусства</h3>
+                  <p class="content__descr descr">
+                    Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
+                  </p>
+                  <a href="#" target="_blank" class="content__link">Подробнее</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
         <div class="swiper-pagination events-pagination"></div>
       </div>
     </section>

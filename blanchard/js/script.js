@@ -1,19 +1,4 @@
 //choices
-const menu = () => {
-  const element = document.querySelector('.menu__select');
-  const choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    classNames: {
-      containerOuter: 'header__choices',
-      containerInner: 'header__inner',
-     },
-  });
- };
-
-menu();
-
-
 const menuSelect = () => {
   const elements = document.querySelectorAll('.menu__select');
   elements.forEach(el => {
@@ -46,6 +31,24 @@ const gallery = () => {
  };
 
  gallery();
+
+
+ //menu-tabs
+let tabsBtn = document.querySelectorAll('.menu__tabs-btn');
+let tabsItem = document.querySelectorAll('.menu__item');
+
+tabsBtn.forEach(function(element){
+  element.addEventListener('click', function(e){
+    const path = e.currentTarget.dataset.path;
+
+    tabsBtn.forEach(function(btn){ btn.classList.remove('menu__tabs-btn--active')});
+    e.currentTarget.classList.add('menu__tabs-btn--active');
+
+    tabsItem.forEach(function(element){ element.classList.remove('menu__item--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('menu__item--active');
+  });
+});
+
 
 //swiper 
 const swiperGallery = document.querySelector('.gallery__swiper');
