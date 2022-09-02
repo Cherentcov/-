@@ -31,7 +31,7 @@
     height: 3.65px;
     left: 0;
     top: 7px;
-    transition: transform .3s ease-in-out, ;
+    transition: transform .3s ease-in-out;
   }
 
   .header__burger::before,
@@ -127,7 +127,7 @@
     display: inline-block;
   }
 
-  .form__search {
+  .header__form-search {
     display: flex;
     align-items: center;
     position: absolute;
@@ -142,7 +142,7 @@
     transform: translateY(-20%);
   }
 
-  .form__search-input {
+  .header__search-input {
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);
     margin-right: 14px;
@@ -151,12 +151,12 @@
     background-color: inherit;
   }
 
-  .form__search-input:focus-visible {
+  .header__search-input:focus-visible {
     outline: 0;
     opacity: 0.8;
   }
 
-  .form__search-input:-moz-focusring {
+  .header__search-input:-moz-focusring {
     outline: 0;
     opacity: 0.8;
   }
@@ -262,7 +262,7 @@
     width: 90%;
   }
 
-  .acoordion__bottom-text {
+  .accordion__bottom-text {
     align-content: space-between;
     max-height: 400px;
     width: 100%;
@@ -325,7 +325,7 @@
     margin-bottom: 4px;
   }
 
-  .address__home {
+  .contacts__address-home {
     margin-bottom: 0;
   }
 
@@ -386,7 +386,7 @@
     margin-bottom: 15px;
   }
 
-  .address_btn {
+  .address-btn{
     padding: 0px 43px;
   }
 
@@ -415,8 +415,6 @@
 
 
 
-
-
 @media (max-width: 950px) {
   .header__top {
     padding-bottom: 18px;
@@ -435,8 +433,12 @@
     display: flex;
   }
 
-  .form__search-input {
+  .header__search-input {
     width: 86%;
+  }
+
+  .header__form-search {
+    right: 0;
   }
 
   .hero__descr {
@@ -487,7 +489,7 @@
     margin-bottom: 50px;
   }
 
-  .acoordion__bottom-text {
+  .accoordion__bottom-text{
     align-content: space-between;
     max-height: 300px;
   }
@@ -560,29 +562,29 @@
     margin-bottom: 31px;
   }
 
-  .address__name {
+  .contacts__address-name {
     margin-bottom: 3px;
   }
 
-  .address_form {
+  .contacts__address-form {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-  .address__container-input:not(:last-child) {
+  .contacts__container-input:not(:last-child) {
     margin-right: 0;
   }
 
-  .address__container-input:first-child {
+  .contacts__container-input:first-child {
     margin-right: 20px;
   }
 
-  .address__container-input {
+  .contacts__container-input {
     width: 48.5%;
     margin-bottom: 12px;
   }
 
-  .address_btn {
+  .address-btn{
     width: 47.5%;
     padding: 0;
     margin-bottom: 32px;
@@ -819,7 +821,7 @@
     height: 30px;
   }
 
-  .acoordion__bottom-text {
+  .accoordion__bottom-text{
     flex-wrap: nowrap;
     min-height: 788px;
   }
@@ -852,7 +854,7 @@
   }
 
   .content__info {
-    padding-top: 44%;
+    padding-top: 45%;
     padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 42px;
@@ -898,7 +900,7 @@
   }
 
   .projects__descr {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .projects__caption {
@@ -919,7 +921,7 @@
   }
 
   .projects__slide {
-    min-height: 67px;
+    min-height: 62px;
   }
 
   .projects-img {
@@ -928,7 +930,7 @@
   }
 
   .contacts {
-    padding-top: 28px;
+    padding-top: 30px;
     border-top: 0;
   }
 
@@ -938,17 +940,17 @@
     line-height: 25px;
   }
 
-  .address__home {
+  .contacts__address-home {
     font-size: 14px;
     line-height: 19px;
   }
 
-  .address__container-input {
+  .contacts__container-input {
     width: 100%;
     margin-bottom: 19px;
   }
 
-  .address__container-input:first-child {
+  .contacts__container-input:first-child {
     margin-right: 0;
   }
 
@@ -956,12 +958,12 @@
     margin-bottom: 14px;
   }
 
-  .address__input {
+  .contacts__input {
     min-width: 100%;
     padding: 12px 10px 9px 25px;
   }
 
-  .address_btn {
+  .address-btn {
     width: 44.5%;
     min-height: 41px;
     margin-bottom: 17px;
@@ -969,7 +971,7 @@
     line-height: 16px;
   }
 
-  .address_btn span {
+  .address-btnspan {
     display: none;
   }
 
@@ -978,7 +980,7 @@
     font-size: 12px;
   }
 
-  .address__subtitle {
+  .contacts__address-subtitle {
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
@@ -986,7 +988,7 @@
     font-weight: 400;
   }
 
-  .social__link svg {
+  .contacts__social-link svg {
     width: 49px;
     height: 49px;
   }
@@ -1001,6 +1003,10 @@
 
   .ymaps-2-1-79-map {
     height: 320px;
+  }
+
+  .footer {
+    min-height: 132px;
   }
 
   .footer__content {

@@ -46,8 +46,11 @@ tabsBtn.forEach(function(element){
 
     tabsItem.forEach(function(element){ element.classList.remove('menu__item--active')});
     document.querySelector(`[data-target="${path}"]`).classList.add('menu__item--active');
-  });
+
+    });
 });
+
+
 
 
 //swiper 
@@ -240,7 +243,7 @@ myMap.geoObjects.add(myPlacemark);
     let phone = document.querySelector("input[type='tel']")
 var im = new Inputmask("+7 (999) 999-99-99")
 im.mask(phone);
-new window.JustValidate('.address_form', {
+new window.JustValidate('.contacts__address-form', {
     colorWrong: '#D11616',
     rules: {
       name: {
@@ -406,12 +409,12 @@ $(document).ready(function() {
 
 //search
   document.querySelector(".btn-open").addEventListener("click", function() {
-  document.querySelector(".form__search").classList.add("form__active");
+  document.querySelector(".header__form-search").classList.add("form__active");
   this.classList.add("active");
 })
 
 document.querySelector(".btn-closed").addEventListener("click", function() {
-  document.querySelector(".form__search").classList.remove("form__active");
+  document.querySelector(".header__form-search").classList.remove("form__active");
 })
 
 

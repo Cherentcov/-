@@ -70,7 +70,7 @@
                   fill="white" />
               </svg>
             </button>
-            <div class="form__search">
+            <div class="header__form-search">
               <form action="/" class="form-menu">
                 <button aria-label="поиск" class="btn btn-reset btn-submit">
                   <svg width="27" height="27" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@
                       fill="white" />
                   </svg>
                 </button>
-                <input type="search" class="form__search-input">
+                <input type="search" class="header__search-input">
                 <button aria-label="закрыть" class="btn btn-reset btn-closed" onclick="remove">
                   <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
                     <rect width="29.567" height="2.9567"
@@ -97,12 +97,13 @@
       </div>
     </div>
     <div class="menu header__menu">
-      <div class="container header_bottom">
+      <div class="container header__bottom">
         <div class="menu__tabs">
           <ul class="menu__tabs-list list-reset">
-            <li name="Реализм" class="menu__tabs-btn" data-path="realism">
-              <button class="menu__tabs-name btn-reset">Реализм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L1 1"/>
+            <li class="menu__tabs-btn" data-path="realism">
+              <button class="menu__tabs-name btn-reset">Реализм <svg width="12" height="7" viewBox="0 0 12 7"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" />
                 </svg></button>
               <div class="menu__item" data-target="realism">
                 <div class="menu__item-content tintoretto-img" tabindex="1">Тинторетто</div>
@@ -111,9 +112,10 @@
                 <div class="menu__item-content verrocchio-img" tabindex="1">Верроккьо</div>
               </div>
             </li>
-            <li name="Импрессионизм" class="menu__tabs-btn" data-path="impressionism">
-              <button class="menu__tabs-name btn-reset">Импрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L1 1"/>
+            <li class="menu__tabs-btn" data-path="impressionism">
+              <button class="menu__tabs-name btn-reset">Импрессионизм <svg width="12" height="7" viewBox="0 0 12 7"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" />
                 </svg></button>
               <div class="menu__item" data-target="impressionism">
                 <div class="menu__item-content monet-img" tabindex="1">Моне</div>
@@ -122,9 +124,10 @@
                 <div class="menu__item-content renoir-img" tabindex="1">Ренуар</div>
               </div>
             </li>
-            <li name="Постимпрессионизм" class="menu__tabs-btn" data-path="Post-Impressionism">
-              <button class="menu__tabs-name btn-reset">Постимпрессионизм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L1 1"/>
+            <li class="menu__tabs-btn" data-path="Post-Impressionism">
+              <button class="menu__tabs-name btn-reset">Постимпрессионизм <svg width="12" height="7" viewBox="0 0 12 7"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" />
                 </svg></button>
               <div class="menu__item" data-target="Post-Impressionism">
                 <div class="menu__item-content van-gogh-img" tabindex="1">Ван Гог</div>
@@ -133,9 +136,10 @@
                 <div class="menu__item-content sulfur-img" tabindex="1">Сёра</div>
               </div>
             </li>
-            <li name="Авангард" class="menu__tabs-btn" data-path="vanguard">
-              <button class="menu__tabs-name btn-reset">Авангард <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L1 1"/>
+            <li class="menu__tabs-btn" data-path="vanguard">
+              <button class="menu__tabs-name btn-reset">Авангард <svg width="12" height="7" viewBox="0 0 12 7"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" />
                 </svg></button>
               <div class="menu__item" data-target="vanguard">
                 <div class="menu__item-content kandinsky-img" tabindex="1">Кандинский</div>
@@ -144,9 +148,10 @@
                 <div class="menu__item-content picasso-img" tabindex="1">Пикассо</div>
               </div>
             </li>
-            <li name="Футуризм" class="menu__tabs-btn" data-path="futurism">
-              <button class="menu__tabs-name btn-reset">Футуризм <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L1 1"/>
+            <li class="menu__tabs-btn" data-path="futurism">
+              <button class="menu__tabs-name btn-reset">Футуризм <svg width="12" height="7" viewBox="0 0 12 7"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L1 1" />
                 </svg></button>
               <div class="menu__item" data-target="futurism">
                 <div class="menu__item-content carra-img" tabindex="1">Карра</div>
@@ -252,15 +257,15 @@
             <div class="gallery__chek chek">
               <div class="chek__container">
                 <input class="chek__checkbox" type="checkbox" name="XIX век" id="XIX">
-                <label class="check__label" for="XIX">XIX век</label>
+                <label class="chek__label" for="XIX">XIX век</label>
               </div>
               <div class="chek__container">
                 <input class="chek__checkbox" type="checkbox" name="XX век" id="XX">
-                <label class="check__label" for="XX">XX&nbsp;век</label>
+                <label class="chek__label" for="XX">XX&nbsp;век</label>
               </div>
               <div class="chek__container">
                 <input class="chek__checkbox" type="checkbox" name="Modernity" id="Modernity">
-                <label class="check__label" for="Modernity">Современность</label>
+                <label class="chek__label" for="Modernity">Современность</label>
               </div>
             </div>
           </div>
@@ -412,7 +417,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Боттичини, Рафаэлло -->
           <div class="tabs__panel catalog__content">
@@ -422,7 +427,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Брамантино -->
           <div class="tabs__panel catalog__content">
@@ -432,7 +437,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Бреа, Людовико -->
           <div class="tabs__panel catalog__content">
@@ -442,7 +447,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Бьяджо д’Антонио Туччи -->
           <div class="tabs__panel catalog__content">
@@ -452,7 +457,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Веккьетта -->
           <div class="tabs__panel catalog__content">
@@ -462,7 +467,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Андреа Верроккьо -->
           <div class="tabs__panel catalog__content">
@@ -472,7 +477,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Доменико Гирландайо -->
           <div class="tabs__panel catalog__content">
@@ -499,7 +504,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Граначчи, Франческо -->
           <div class="tabs__panel catalog__content">
@@ -509,7 +514,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Грегорио ди Чекко -->
           <div class="tabs__panel catalog__content">
@@ -519,7 +524,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Джованни да Удине -->
           <div class="tabs__panel catalog__content">
@@ -529,7 +534,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Джованни ди Паоло -->
           <div class="tabs__panel catalog__content">
@@ -539,7 +544,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Джорджоне -->
           <div class="tabs__panel catalog__content">
@@ -549,7 +554,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Парентино, Бернардо -->
           <div class="tabs__panel catalog__content">
@@ -559,7 +564,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Пезеллино -->
           <div class="tabs__panel catalog__content">
@@ -569,7 +574,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Пьетро Перуджино -->
           <div class="tabs__panel catalog__content">
@@ -579,7 +584,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Перуцци, Бальдассаре -->
           <div class="tabs__panel catalog__content">
@@ -589,7 +594,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Пизанелло -->
           <div class="tabs__panel catalog__content">
@@ -599,7 +604,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <!-- Пинтуриккьо -->
           <div class="tabs__panel catalog__content">
@@ -609,7 +614,7 @@
             <p class="catalog__text descr">
               Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
             </p>
-            <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+            <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
           </div>
           <ul class="catalog__accordion accordion list-reset">
             <li class="accordion__item">
@@ -624,7 +629,7 @@
                 </span>
               </button>
               <div class="accordion__bottom">
-                <ul class="acoordion__bottom-text tabs__nav list-reset">
+                <ul class="accordion__bottom-text tabs__nav list-reset">
                   <!-- Кнопки для открытия табов-->
                   <li class="tabs__nav-item"><button class="accoorduon-btn btn-reset tabs__nav-btn"
                       type="button">Бенедетто ди&nbsp;Биндо</button></li>
@@ -693,13 +698,13 @@
                   <div class="block"></div>
                 </div>
                 <div class="accordion__bottom-info">
-                  <h5 class="info__title">
+                  <h5 class="accordion__info-title">
                     Здесь пока пусто
                   </h5>
-                  <p class="info__text">
+                  <p class="accordion__info-text">
                     А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
                 </div>
               </div>
             </li>
@@ -719,13 +724,13 @@
                   <div class="block"></div>
                 </div>
                 <div class="accordion__bottom-info">
-                  <h5 class="info__title">
+                  <h5 class="accordion__info-title">
                     Здесь пока пусто
                   </h5>
-                  <p class="info__text">
+                  <p class="accordion__info-text">
                     А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
                 </div>
               </div>
             </li>
@@ -745,13 +750,13 @@
                   <div class="block"></div>
                 </div>
                 <div class="accordion__bottom-info">
-                  <h5 class="info__title">
+                  <h5 class="accordion__info-title">
                     Здесь пока пусто
                   </h5>
-                  <p class="info__text">
+                  <p class="accordion__info-text">
                     А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
                 </div>
               </div>
             </li>
@@ -771,13 +776,13 @@
                   <div class="block"></div>
                 </div>
                 <div class="accordion__bottom-info">
-                  <h5 class="info__title">
+                  <h5 class="accordion__info-title">
                     Здесь пока пусто
                   </h5>
-                  <p class="info__text">
+                  <p class="accordion__info-text">
                     А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
                 </div>
               </div>
             </li>
@@ -797,13 +802,13 @@
                   <div class="block"></div>
                 </div>
                 <div class="accordion__bottom-info">
-                  <h5 class="info__title">
+                  <h5 class="accordion__info-title">
                     Здесь пока пусто
                   </h5>
-                  <p class="info__text">
+                  <p class="accordion__info-text">
                     А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
                 </div>
               </div>
             </li>
@@ -823,13 +828,13 @@
                   <div class="block"></div>
                 </div>
                 <div class="accordion__bottom-info">
-                  <h5 class="info__title">
+                  <h5 class="accordion__info-title">
                     Здесь пока пусто
                   </h5>
-                  <p class="info__text">
+                  <p class="accordion__info-text">
                     А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a href="#gallery" class="info__link">В&nbsp;галерею</a>
+                  <a href="#gallery" class="catalog__info-link">В&nbsp;галерею</a>
                 </div>
               </div>
             </li>
@@ -935,20 +940,20 @@
         <h2 class="projects__title title">Проекты</h2>
         <p class="projects__descr descr">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
-          фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
-          с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает
-          их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <span
+          фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны
+          с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает
+          их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <span
             class="projects__tooltip-text tooltip-txt txt1"><span class="projects__tooltip">i</span></span> обеспечение
           нашей
           деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет
           сомнений, что действия представителей оппозиции могут быть рассмотрены <span
             class="projects__tooltip-text tooltip-txt txt2"><span class="projects__tooltip">i</span></span>
-          исключительно в&nbsp;разрезе
-          маркетинговых и&nbsp;финансовых <span class="projects__tooltip-text tooltip-txt txt3"><span
+          исключительно в разрезе
+          маркетинговых и финансовых <span class="projects__tooltip-text tooltip-txt txt3"><span
               class="projects__tooltip">i</span></span> предпосылок. Банальные,
-          но&nbsp;неопровержимые выводы, а&nbsp;также
-          представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою
-          очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости.
+          но неопровержимые выводы, а также
+          представители современных социальных резервов призывают нас к новым свершениям, которые, в свою
+          очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
           Подробнее: <a class="projects__link" href="http://blanchard-art.ru/projects"
             target="_blank">blanchard-art.ru/projects</a>
         </p>
@@ -1009,26 +1014,26 @@
       <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__top">
-          <address class="contacts__address address">
-            <span class="address__name">Шоурум &#8470;&nbsp;4</span>
-            <span class="address__home">Леонтьевский переулок, дом 5/1</span>
+          <address class="contacts__address">
+            <span class="contacts__address-name">Шоурум &#8470;&nbsp;4</span>
+            <span class="contacts__address-home">Леонтьевский переулок, дом 5/1</span>
           </address>
-          <form action="#" method="POST" enctype="multipart/form-data" class="address_form">
-            <div class="address__container-input">
-              <input type="text" class="address__input" name="ФИО" placeholder="Имя*" autocomplete="on"
+          <form action="#" method="POST" enctype="multipart/form-data" class="contacts__address-form">
+            <div class="contacts__container-input">
+              <input type="text" class="contacts__input" name="ФИО" placeholder="Имя*" autocomplete="on"
                 data-validate-field="name" aria-label="Введите имя">
             </div>
-            <div class="address__container-input">
-              <input type="tel" class="address__input" name="phone" placeholder="Телефон*" autocomplete="on"
+            <div class="contacts__container-input">
+              <input type="tel" class="contacts__input" name="phone" placeholder="Телефон*" autocomplete="on"
                 data-validate-field="phone" aria-label="Введите номер телефона">
             </div>
-            <button class="address_btn btn-reset">Заказать <span>обратный звонок</span></button>
+            <button class="address-btn btn-reset">Заказать <span>обратный звонок</span></button>
           </form>
-          <div class="address__link">
-            <span class="address__subtitle">Связаться в&nbsp;один клик</span>
-            <div class="address__social social">
+          <div class="contacts__address-link">
+            <span class="contacts__address-subtitle">Связаться в&nbsp;один клик</span>
+            <div class="contacts__address-social">
               <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer"
-                class="social__link whatsapp">
+                class="contacts__social-link whatsapp">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z" />
@@ -1038,21 +1043,17 @@
                 </svg>
               </a>
               <a href="https://web.telegram.org/k" target="_blank" rel="noopener noreferrer"
-                class="social__link telegram">
+                class="contacts__social-link telegram">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z"
-                    fill="white" />
+                  <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="url(#paint0_linear_136320_63)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05312 19.7889L20.7167 14.7649C26.271 12.4547 27.425 12.0534 28.1773 12.0402C28.3428 12.0373 28.7127 12.0783 28.9523 12.2727C29.1547 12.4369 29.2103 12.6587 29.237 12.8143C29.2636 12.9699 29.2968 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0045 27.9806C26.7241 29.4794 26.1725 29.9819 25.6377 30.0311C24.4762 30.138 23.5943 29.2635 22.4694 28.5261L18.006 25.528C16.0314 24.2268 17.3114 23.5116 18.4368 22.3428C18.7313 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9715 16.7104 23.8546 16.6064C23.7376 16.5024 23.565 16.5384 23.4404 16.5663C23.2639 16.6064 20.4519 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8354 22.9435C12.1213 22.9281 10.7477 22.5397 9.72652 22.2078C8.474 21.8007 7.47852 21.5854 7.56524 20.8939C7.61036 20.5338 8.10632 20.1655 9.05308 19.789L9.05312 19.7889Z" fill="white"/>
                   <defs>
-                    <linearGradient id="paint0_linear_136320_63" x1="20" y1="0" x2="20" y2="39.7033"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#2AABEE" />
-                      <stop offset="1" stop-color="#229ED9" />
-                    </linearGradient>
+                  <linearGradient id="paint0_linear_136320_63" x1="20" y1="0" x2="20" y2="39.7033" gradientUnits="userSpaceOnUse">
+                  <stop offset="1" stop-color="#2AABEE"/>
+                  <stop offset="1" stop-color="#229ED9"/>
+                  </linearGradient>
                   </defs>
-                </svg>
+                  </svg>
               </a>
             </div>
           </div>
