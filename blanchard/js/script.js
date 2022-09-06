@@ -33,7 +33,7 @@ const gallery = () => {
  gallery();
 
 
- //menu-tabs
+ //menu-tabs open
 let tabsBtn = document.querySelectorAll('.menu__tabs-btn');
 let tabsItem = document.querySelectorAll('.menu__item');
 
@@ -49,6 +49,24 @@ tabsBtn.forEach(function(element){
 
     });
 });
+
+//menu-tabs closed
+window.onclick = function(event) {
+    if (!event.target.matches('.menu__tabs-name')) {
+        var dropdowns = document.getElementsByClassName("menu__item");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('menu__item--active')) {
+                openDropdown.classList.remove('menu__item--active');
+                tabsBtn.forEach(function(btn){ btn.classList.remove('menu__tabs-btn--active')});
+                e.currentTarget.classList.add('menu__tabs-btn--active');  
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -425,3 +443,9 @@ if (('ontouchstart' in window) || window.DocumentTouch && document instanceof Do
   console.log('this is not a touch device');
   document.body.classList.add('no-touch');
 }
+
+
+
+$('form').submit(function () {
+  return false;
+});
