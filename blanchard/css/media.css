@@ -133,7 +133,7 @@
     position: absolute;
     z-index: 5;
     top: 15%;
-    right: 25px;
+    right: 10px;
     width: 100%;
     background-color: #000;
     padding: 16px 13px 16px 32px;
@@ -144,6 +144,7 @@
   }
 
   .header__search-input {
+    width: 100%;
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);
     margin-right: 14px;
@@ -172,6 +173,12 @@
 
   .btn__open:active:not(:focus-visible) {
     opacity: 0;
+  }
+
+  .form-menu {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .form__active {
@@ -282,23 +289,23 @@
   }
 
   .swiper-img1::before {
-    background-image: url(/img/events-swiper1\(1200\).jpg)
+    background-image: url(img/events-swiper1\(1200\).jpg)
   }
 
   .swiper-img2::before {
-    background-image: url(/img/events-swiper2\(1200\).jpg);
+    background-image: url(img/events-swiper2\(1200\).jpg);
   }
 
   .swiper-img3::before {
-    background-image: url(/img/events-swiper3\(1200\).jpg);
+    background-image: url(img/events-swiper3\(1200\).jpg);
   }
 
   .swiper-img4::before {
-    background-image: url(/img/events-swiper4\(1200\).jpg);
+    background-image: url(img/events-swiper4\(1200\).jpg);
   }
 
   .swiper-img5::before {
-    background-image: url(/img/events-swiper4\(1200\).jpg);
+    background-image: url(img/events-swiper4\(1200\).jpg);
   }
 
   .content__info::before {
@@ -448,7 +455,7 @@
 
   .gallery {
     min-height: 889px;
-    background-image: url(/img/gallery-img\(950\).png);
+    background-image: url(img/gallery-img\(950\).png);
   }
 
   .gallery__contetnt {
@@ -490,9 +497,10 @@
     margin-bottom: 50px;
   }
 
-  .accoordion__bottom-text{
+  .accordion__bottom-text {
     align-content: space-between;
     max-height: 300px;
+    width: 100%;
   }
 
   .tabs-none {
@@ -789,7 +797,7 @@
 
   .gallery {
     min-height: 800px;
-    background-image: url(/img/gallery-img\(650\).png);
+    background-image: url(img/gallery-img\(650\).png);
   }
 
   .catalog {
@@ -822,7 +830,7 @@
     height: 30px;
   }
 
-  .accoordion__bottom-text{
+  .accordion__bottom-text {
     flex-wrap: nowrap;
     min-height: 788px;
   }

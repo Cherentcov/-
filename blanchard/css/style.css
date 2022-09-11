@@ -345,83 +345,83 @@ input::-webkit-search-results-decoration {
 }
 
 .tintoretto-img {
-  background-image: url(/img/Realism-Tintoretto.png);
+  background-image: url(img/Realism-Tintoretto.png);
 }
 
 .friedrich-img {
-  background-image: url(/img/Realism-friedrich.png);
+  background-image: url(img/Realism-friedrich.png);
 }
 
 .leonardo-img {
-  background-image: url(/img/Realism-leonardo.png);
+  background-image: url(img/Realism-leonardo.png);
 }
 
 .verrocchio-img {
-  background-image: url(/img/Realism-verrocchio.png);
+  background-image: url(img/Realism-verrocchio.png);
 }
 
 .monet-img {
-  background-image: url(/img/impressionism-monet.png);
+  background-image: url(img/impressionism-monet.png);
 }
 
 .sisley-img {
-  background-image: url(/img/impressionism-sisley.png);
+  background-image: url(img/impressionism-sisley.png);
 }
 
 .mane-img {
-  background-image: url(/img/impressionism-mane.png);
+  background-image: url(img/impressionism-mane.png);
 }
 
 .renoir-img {
-  background-image: url(/img/impressionism-renoir.png);
+  background-image: url(img/impressionism-renoir.png);
 }
 
 .van-gogh-img {
-  background-image: url(/img/Post-Impressionism-van-gogh.png);
+  background-image: url(img/Post-Impressionism-van-gogh.png);
 }
 
 .cezanne-img {
-  background-image: url(/img/Post-Impressionism-cezanne.png);
+  background-image: url(img/Post-Impressionism-cezanne.png);
 }
 
 .gogen-img {
-  background-image: url(/img/Post-Impressionism-gogen.png);
+  background-image: url(img/Post-Impressionism-gogen.png);
 }
 
 .sulfur-img {
-  background-image: url(/img/Post-Impressionism-sulfur.png);
+  background-image: url(img/Post-Impressionism-sulfur.png);
 }
 
 .kandinsky-img {
-  background-image: url(/img/vanguard-kandinsky.png);
+  background-image: url(img/vanguard-kandinsky.png);
 }
 
 .marinetti-img {
-  background-image: url(/img/vanguard-marinetti.png);
+  background-image: url(img/vanguard-marinetti.png);
 }
 
 .malevich-img {
-  background-image: url(/img/vanguard-malevich.png);
+  background-image: url(img/vanguard-malevich.png);
 }
 
 .picasso-img {
-  background-image: url(/img/vanguard-picasso.png);
+  background-image: url(img/vanguard-picasso.png);
 }
 
 .carra-img {
-  background-image: url(/img/futurism-carra.png);
+  background-image: url(img/futurism-carra.png);
 }
 
 .pratella-img {
-  background-image: url(/img/futurism-pratella.png);
+  background-image: url(img/futurism-pratella.png);
 }
 
 .severini-img {
-  background-image: url(/img/futurism-severini.png);
+  background-image: url(img/futurism-severini.png);
 }
 
 .balla-img {
-  background-image: url(/img/futurism-balla.png);
+  background-image: url(img/futurism-balla.png);
 }
 
 .header__form {
@@ -513,7 +513,7 @@ input::-webkit-search-results-decoration {
 }
 
 .hero__descr {
-  width: 45%;
+  width: 35%;
   margin-bottom: 112px;
   font-weight: 700;
   font-size: 18px;
@@ -584,7 +584,7 @@ input::-webkit-search-results-decoration {
 
 /*Gallery*/
 .gallery {
-  background-image: url(/img/galleru_img.jpg);
+  background-image: url(img/galleru_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 595px;
@@ -661,7 +661,7 @@ input::-webkit-search-results-decoration {
   bottom: 0;
   width: 10px;
   transform: translateX(50%);
-  background-image: url(/img/choises.svg);
+  background-image: url(img/choises.svg);
   background-repeat: no-repeat;
   background-position: center;
   transition: transform .2s ease-out;
@@ -712,7 +712,7 @@ input::-webkit-search-results-decoration {
 
 .chek__checkbox:checked+label::before {
   background-size: 4px 4px;
-  background-image: url(/img/gallery-chek.png);
+  background-image: url(img/gallery-chek.png);
 }
 
 .chek__checkbox:not(:disabled):not(:checked)+label:hover::before {
@@ -764,7 +764,7 @@ input::-webkit-search-results-decoration {
   width: 80%;
   height: 80%;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(/img/Group\ 12.png);
+  background-image: url(img/Group\ 12.png);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
@@ -1051,7 +1051,7 @@ input::-webkit-search-results-decoration {
 .tabs-none {
   width: 94%;
   height: 41%;
-  background-image: url(/img/tabs-none.png);
+  background-image: url(img/tabs-none.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ececec;
@@ -1160,23 +1160,23 @@ input::-webkit-search-results-decoration {
 }
 
 .swiper-img1::before {
-  background-image: url(/img/events-swiper1.jpg);
+  background-image: url(img/events-swiper1.jpg);
 }
 
 .swiper-img2::before {
-  background-image: url(/img/events-swiper2.jpg);
+  background-image: url(img/events-swiper2.jpg);
 }
 
 .swiper-img3::before {
-  background-image: url(/img/events-swiper3.jpg);
+  background-image: url(img/events-swiper3.jpg);
 }
 
 .swiper-img4::before {
-  background-image: url(/img/events-swiper4.jpg);
+  background-image: url(img/events-swiper4.jpg);
 }
 
 .swiper-img5::before {
-  background-image: url(/img/events-swiper5.jpg);
+  background-image: url(img/events-swiper5.jpg);
 }
 
 .content__info::before {
