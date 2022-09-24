@@ -78,187 +78,188 @@ const swiperProjects = document.querySelector ('.projects__swiper')
 const swiperHero = document.querySelector('.hero__swiper')
 
 let heroSwiper = new Swiper(swiperHero, {
-  speed: 800,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  spaceBetween: 5,
- loop: true,
-autoplay: {
-  delay: 4000,
-},
-effect: 'fade',
-fadeEffect: {
-  croossFade: true,
-}
+    speed: 800,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 5,
+    loop: true,
+    autoplay: {
+        delay: 4000,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        croossFade: true,
+    },
 });
 
 let gallerySwiper = new Swiper(swiperGallery, {
-  speed: 300,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
- spaceBetween: 25,
- loop: true,
- breakpoints: {
- 1200: {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 50,
-  },
-  950: {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 34,
-  },
-  650: {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 38,
-  }
- }
+    speed: 300,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+    },
+    spaceBetween: 25,
+    loop: false,
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+        },
+        950: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 34,
+        },
+        650: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 38,
+        },
+    }
 });
 
 let eventsSwiper = new Swiper(swiperEvents, {
-  speed: 300,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  navigation: {
-    nextEl: '.events-button-next',
-    prevEl: '.events-button-prev',
-  },
-  pagination: {
-    el: '.events-pagination',
-    type: 'bullets',
-   },
- loop: true,
- breakpoints: {
- 1200: {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 50,
-},
-950: {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 27,
-  pagination: {
-    el: '.events-pagination',
-    type: 'bullets',
-   },
-},
-650: {
-  slidesPerView: 2,
-  slidesPerGroup: 2,
-  spaceBetween: 34,
-  pagination: {
-    el: '.events-pagination',
-    type: 'bullets',
-   },
-},
- },
-
+    speed: 300,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    navigation: {
+        nextEl: '.events-button-next',
+        prevEl: '.events-button-prev',
+    },
+    pagination: {
+        clickable: true,
+        el: '.events-pagination',
+        type: 'bullets',
+    },
+    loop: false,
+    breakpoints: {
+        1201: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+            pagination: {
+                el: false,
+                type: false,
+            },
+        },
+        950: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 27,
+            pagination: {
+                clickable: true,
+                el: '.events-pagination',
+                type: 'bullets',
+            },
+        },
+        650: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 34,
+            pagination: {
+                clickable: true,
+                el: '.events-pagination',
+                type: 'bullets',
+            },
+        },
+    },
 });
 
 let projectsSwiper = new Swiper(swiperProjects, {
-  speed: 300,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  navigation: {
-    nextEl: '.projects-button-next',
-    prevEl: '.projects-button-prev',
-  },
-loop: true,
- breakpoints: {
-  1200: {
-   slidesPerView: 3,
-   slidesPerGroup: 3,
-   spaceBetween: 50,
- },
- 950: {
-   slidesPerView: 2,
-   slidesPerGroup: 1,
-   spaceBetween: 50,
- },
- 650: {
-  slidesPerView: 2,
-  slidesPerGroup: 1,
-  spaceBetween: 34,
- }
-}
+    speed: 300,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    navigation: {
+        nextEl: '.projects-button-next',
+        prevEl: '.projects-button-prev',
+    },
+    loop: false,
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50,
+        },
+        950: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 50,
+        },
+        650: {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 34,
+        },
+    },
 });
 
 
 
 //acardion 
 
- $( function() {
-  $( ".catalog__accordion" ).accordion({
-     icons: false,
-     heightStyle: "content",
-     collapsible: true,
-     active: 0
-   });
+$( function() {
+    $( ".catalog__accordion" ).accordion({
+        icons: false,
+        heightStyle: "content",
+        collapsible: true,
+        active: 0
+    });
     
- } );
+});
 
 //maps
- // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init);
+function init(){
         // Создание карты.
-        var myMap = new ymaps.Map("map", {
+     var myMap = new ymaps.Map("map", {
             // Координаты центра карты.
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
             // воспользуйтесь инструментом Определение координат.
-            center: [55.76035256508636,37.614690103118896],
+         center: [55.76035256508636,37.614690103118896],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
-            zoom: 17,
+         zoom: 17,
            });
         // Создание геообъекта с типом точка (метка).
-var myGeoObject = new ymaps.GeoObject({
-  geometry: {
-      type: "Point", // тип геометрии - точка
-     
-  },
- 
-});
-
-myMap.behaviors 
-myMap.behaviors.disable('scrollZoom')
-
-myPlacemark = new ymaps.Placemark([55.76035256508636,37.614690103118896], {}, {
-  // Опции.
-  // Необходимо указать данный тип макета.
-  iconLayout: 'default#image',
-  // Своё изображение иконки метки.
-  iconImageHref: 'img/myMaps.svg',
-  // Размеры метки.
-  iconImageSize: [30, 42],
-  // Смещение левого верхнего угла иконки относительно
-  // её "ножки" (точки привязки).
-  iconImageOffset: [-5, -38]
-}),
-
-// Размещение геообъекта на карте.
-myMap.geoObjects.add(myGeoObject);
-myMap.geoObjects.add(myPlacemark); 
-    }
+    var myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point", // тип геометрии - точка
+        },
+    });
+    myMap.behaviors
+    myMap.behaviors.disable('scrollZoom')
+    myPlacemark = new ymaps.Placemark([55.76035256508636,37.614690103118896], {}, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'img/myMaps.svg',
+        // Размеры метки.
+        iconImageSize: [30, 42],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -38]
+    })
+    // Размещение геообъекта на карте.
+    myMap.geoObjects.add(myGeoObject);
+    myMap.geoObjects.add(myPlacemark);
+};
 
   
 
 
-    //form
-    let phone = document.querySelector("input[type='tel']")
+//form
+let phone = document.querySelector("input[type='tel']")
 var im = new Inputmask("+7 (999) 999-99-99")
 im.mask(phone);
 new window.JustValidate('.contacts__address-form', {
@@ -410,7 +411,6 @@ document.addEventListener('keydown', function (e){
 //Tabs
 const tabs1 = new GraphTabs('tab', {
   isChanged: (tabs) => {
-    console.log(tabs);
   }
 });
 
@@ -420,7 +420,8 @@ tabs1.switchTabs(document.querySelector('#tab12'));
 //Burger-menu
 $(document).ready(function() {
   $('.header__burger').click(function(event) {
-     $('.header__burger,.header__nav').toggleClass('active'); 
+      $('.header__burger,.header__nav').toggleClass('active');
+      $('body').toggleClass('lock');
   });
 });
 
@@ -428,11 +429,13 @@ $(document).ready(function() {
 //search
   document.querySelector(".btn-open").addEventListener("click", function() {
   document.querySelector(".header__form-search").classList.add("form__active");
+  document.querySelector(".btn-open").classList.add("btn-open__active");
   this.classList.add("active");
 })
 
 document.querySelector(".btn-closed").addEventListener("click", function() {
   document.querySelector(".header__form-search").classList.remove("form__active");
+    document.querySelector(".btn-open").classList.remove("btn-open__active");
 })
 
 
@@ -444,8 +447,12 @@ if (('ontouchstart' in window) || window.DocumentTouch && document instanceof Do
   document.body.classList.add('no-touch');
 }
 
-
-
 $('form').submit(function () {
   return false;
+});
+
+
+tippy('[data-tippy-content]', {
+    animation: 'scale',
+    theme: 'blue',
 });
